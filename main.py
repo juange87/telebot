@@ -120,6 +120,8 @@ class WebhookHandler(webapp2.RequestHandler):
                 output = StringIO.StringIO()
                 img.save(output, 'JPEG')
                 reply(img=output.getvalue())
+            elif text == '/yaveremos':
+                reply('https://www.youtube.com/watch?v=IOnNTQ-Ca7I')
             else:
                 reply('What command?')
 
